@@ -6,6 +6,11 @@ canvas {
   margin:auto;
   background:white;
 }
+
+.centered {
+	 vertical-align: middle;
+	 margin-top: 150px;
+}
 .example{
   background:black;
    /*min-height: 500px;*/
