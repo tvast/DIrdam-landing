@@ -4,7 +4,7 @@ var mask;
 
 var pointCount = 800;
 var str = "Elihpoeht";
-var fontStr = "bold 128pt Permanent Marker";
+var fontStr = "bold 128pt arial";
 
 ctx.font = fontStr;
 ctx.textAlign = "center";
