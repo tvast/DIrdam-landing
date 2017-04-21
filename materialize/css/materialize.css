@@ -2370,7 +2370,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
+ /* color: inherit;*/
   /* 1 */
   font: inherit;
   /* 2 */
@@ -2407,7 +2407,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
+  /*-webkit-appearance: button;*/
   /* 2 */
   cursor: pointer;
   /* 3 */
@@ -5893,7 +5893,7 @@ select:focus {
 
 button:focus {
   outline: none;
-  background-color: #2ab7a9;
+  /*background-color: #2ab7a9;*/
 }
 
 label {
@@ -8809,7 +8809,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
-  background-color: #a1ded8;
+ /* background-color: #a1ded8;*/
 }
 
 /* ==========================================================================

@@ -11,17 +11,26 @@
 </head>
 <body>
 
-  <div style="margin-top: 25%;" class="container center centered">
+  <div class="container center centered">
     <canvas id="myCanvas"></canvas>
     <h1>Dirdam project</h1>
     <p>music producer</p>
     <p id="intro"></p>
     <!-- Modal Trigger -->
-    <a id="modal1" class="waves-effect waves-light btn black" href="#modal1">Play</a>
-    <a id="modal2"class="waves-effect waves-light btn black" href="#modal2">Pause</a>
+ <!--    <a id="modal1" class="waves-effect waves-light btn black" href="#modal1">Play</a>
+    <a id="modal2"class="waves-effect waves-light btn black" href="#modal2">Pause</a> -->
+
     <br>
-    <audio controls id="play" width="100%" src="demo.mp3">
-      </audio>
+    <!-- <audio textTracks controls id="play" width="100%" src="demo.mp3"></audio> -->
+    <audio id="music" preload="true">
+      <source src="demo.mp3">
+        </audio>
+        <div id="audioplayer">
+          <button id="pButton" class="play"></button>
+          <div id="timeline">    
+            <div id="playhead"></div>
+          </div>
+        </div>
       
   
 
@@ -62,6 +71,7 @@
 
 
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="control.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="materialize/js/materialize.js"></script>
   <!-- modal -->
@@ -82,17 +92,5 @@ $(this).css({backgroundPosition: e.pageX+"px "+e.pageY+"px"});
 });
 });
 });
-  </script>
-  <!-- trigger audio -->
-  <script type="text/javascript">
-    document.getElementById("modal1").addEventListener("click", function(){
-    
-          document.getElementById("play").play();
-});
-      document.getElementById("modal2").addEventListener("click", function(){
-        document.getElementById("intro").innerHTML = "THANK for listening, a live show is under construction with synth, rock guitare, live vjing  and french poetry... And many more !";
-          document.getElementById("play").pause();
-});
-  </script>
 </body>
 </html>
